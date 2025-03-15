@@ -7,10 +7,10 @@ class Page
     private $meta;
     private $content;
 
-    public function __construct(array $page)
+    public function __construct($meta, $content)
     {
-        $this->meta = $page['frontMatter'];
-        $this->content = $page['content'];
+        $this->meta = $meta;
+        $this->content = $content;
     }
 
     public function getMeta(string $key): ?string
@@ -20,6 +20,6 @@ class Page
 
     public function getContent(): ?string
     {
-        return "<p>Hello, World!</p>";
+        return $this->content;
     }
 }

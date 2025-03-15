@@ -8,10 +8,9 @@ use Y0t\Withered\Page\Page;
 
 $parser = new MarkdownParser();
 $md = file_get_contents('sample.md');
-$contents = $parser->parse($md);
+$parsed = $parser->parse($md);
 
 $config = new Config();
-$page = new Page($contents);
+$page = new Page($parsed['frontMatter'], $parsed['content']);
 
 require 'templates/layout.php';
-
