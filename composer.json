@@ -1,0 +1,20 @@
+{
+    "name": "y0t/withered",
+    "description": "Simple Static Site Generator for y0t",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Y0t\\Withered\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yami0thiele",
+            "email": "yami0thiele@virt-eng.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3"
+    }
+}
