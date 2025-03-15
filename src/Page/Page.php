@@ -1,0 +1,25 @@
+<?php
+
+namespace Y0t\Withered\Page;
+
+class Page
+{
+    private $meta;
+    private $content;
+
+    public function __construct(array $page)
+    {
+        $this->meta = $page['frontMatter'];
+        $this->content = $page['content'];
+    }
+
+    public function getMeta(string $key): ?string
+    {
+        return $this->meta[$key] ?? null;
+    }
+
+    public function getContent(): ?string
+    {
+        return "<p>Hello, World!</p>";
+    }
+}
