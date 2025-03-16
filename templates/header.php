@@ -1,10 +1,9 @@
-<?php ?>
 <header>
-    <nav>
+    <div class="title"><?= $renderer->getConfig('site')['title']; ?></div>
+    <nav class="header-nav">
         <ul>
-            <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/rss.xml">RSS</a></li>
         </ul>
     </nav>
 </header>

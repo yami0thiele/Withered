@@ -2,7 +2,7 @@
     "name": "y0t/withered",
     "description": "Simple Static Site Generator for y0t",
     "type": "project",
-    "license": "MIT",
+    "license": "",
     "autoload": {
         "psr-4": {
             "Y0t\\Withered\\": "src/"

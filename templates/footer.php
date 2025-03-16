@@ -1,4 +1,3 @@
-<?php ?>
 <footer>
-    <p>&copy; 2025 Y0t</p>
+    <p> <?= date("Y"); ?> <?= $renderer->getConfig('site')['author'] ?></p>
 </footer>

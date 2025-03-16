@@ -6,11 +6,13 @@ class Page
 {
     private $meta;
     private $content;
+    private $path;
 
-    public function __construct($meta, $content)
+    public function __construct($meta, $content, $path)
     {
         $this->meta = $meta;
         $this->content = $content;
+        $this->path = $path;
     }
 
     public function getMeta(string $key): ?string
@@ -21,5 +23,10 @@ class Page
     public function getContent(): ?string
     {
         return $this->content;
+    }
+
+    public function getPath(): ?string
+    {
+        return $this->path;
     }
 }
