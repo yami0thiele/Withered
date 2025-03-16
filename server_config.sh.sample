@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# サーバー設定（このファイルをserver_config.shにコピーして適切な値に変更してください）
+REMOTE_SERVER="example_user@example.com"
+SOURCE_DIR="./dist/"
+DEST_DIR="/usr/share/html/"

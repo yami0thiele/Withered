@@ -1,2 +1,5 @@
 /vendor/
 /build/
+
+# 機密情報の設定ファイル
+server_config.sh

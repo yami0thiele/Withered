@@ -1,3 +1,3 @@
 <footer>
-    <p> <?= date("Y"); ?> <?= $renderer->getConfig('site')['author'] ?></p>
+    Copyright <?= date("Y"); ?> <?= $renderer->getConfig('site')['author'] ?>
 </footer>
