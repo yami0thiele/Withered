@@ -22,7 +22,7 @@ class PageIndexBuilder
         $content = $this->page->getContent();
 
         usort($this->pages, function ($a, $b) {
-            return strtotime($a->getMeta('date')) <=> strtotime($b->getMeta('date'));
+            return strtotime($b->getMeta('date')) <=> strtotime($a->getMeta('date'));
         });
 
         $list = [];
